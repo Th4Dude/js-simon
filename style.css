@@ -13,9 +13,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
-    width: 400px;
-    background-color: bisque;
+    height: 350px;
+    width: 100px;
+    background-color: rgb(131, 183, 210);
     border: black .0625rem solid;
     border-radius: 15px;
+}
+.prova{
+    background-color: rgb(208, 227, 146);
+    font-size: 24px;
+    border-radius: 15px;
+    padding: 20px;
+    color: cornflowerblue;
 }

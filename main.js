@@ -18,42 +18,44 @@ function getRndInteger(max) {
 
 /* Funzione appare Prompt */ 
 
-const numeriUtenteInseriti = [];
-
 function promptAppare(){
+    const numeriUtenteInseriti = [];
+    let numeriUguali = 0
     for(let i = 0 ; i < 5 ; i++){
         const numeroUtente = Number(prompt('inserisci i numeri che ricordi'));
-        const numeriUtenteInseriti = numeroUtente
-        console.log(numeriUtenteInseriti)
+        numeriUtenteInseriti.push(numeroUtente);
+        if(numeriRandom.includes(numeroUtente)){
+            numeriUguali++;
+        }
     }
+    alert(`hai indovinato ${numeriUguali} numeri su 5`)
  }
 
  /* Funzione appare Prompt */ 
 
  /* array di numeri */
 
+ const numeriRandom = [];
+
  const numeriDom = document.getElementById('demo');
 
   for(let i = 0 ; i < 5; i++){
-    let numeriRandom = getRndInteger(100);
-    console.log(numeriRandom);
-    numeriDom.innerHTML += numeriRandom + ' ';
+    let demo = getRndInteger(100);
+    numeriRandom.push(demo);
+    console.log(demo)
+    const element = document.createElement('div');
+    element.classList.add("prova");
+    element.innerText = demo;
+    numeriDom.append(element);
 }
 
 /* array di numeri */
 
 /* Timer con funzione */
 
-setTimeout( NumeriDaNascondere, 1* 1000);
+setTimeout( NumeriDaNascondere, 30* 1000);
 
-setTimeout(promptAppare, 4 * 1000)
-
-
+setTimeout(promptAppare, 31 * 1000)
 
 /* Timer con funzione */
-
-
-
-
-
 
