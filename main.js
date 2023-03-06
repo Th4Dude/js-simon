@@ -6,11 +6,29 @@ function getRndInteger(max) {
     return Math.floor(Math.random() * max) + 1;    
   }
   
+  /* Funzione generatore random numeri */ 
+
+  /* Funzione nasconde numeri */ 
+
   function NumeriDaNascondere(){
     numeriDom.innerHTML = '';
 }
 
- /* Funzione generatore random numeri */ 
+/* Funzione nasconde numeri */ 
+
+/* Funzione appare Prompt */ 
+
+const numeriUtenteInseriti = [];
+
+function promptAppare(){
+    for(let i = 0 ; i < 5 ; i++){
+        const numeroUtente = Number(prompt('inserisci i numeri che ricordi'));
+        const numeriUtenteInseriti = numeroUtente
+        console.log(numeriUtenteInseriti)
+    }
+ }
+
+ /* Funzione appare Prompt */ 
 
  /* array di numeri */
 
@@ -26,8 +44,16 @@ function getRndInteger(max) {
 
 /* Timer con funzione */
 
-setTimeout( NumeriDaNascondere, 5 * 1000);
+setTimeout( NumeriDaNascondere, 1* 1000);
+
+setTimeout(promptAppare, 4 * 1000)
+
+
 
 /* Timer con funzione */
 
-const myTimeout = setTimeout( prompt('inserisci un numero'), 10 * 1000);
+
+
+
+
+
