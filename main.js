@@ -28,7 +28,7 @@ function promptAppare(){
             numeriUguali++;
         }
     }
-    alert(`hai indovinato ${numeriUguali} numeri su 5`)
+    alert(`hai indovinato ${numeriUguali} numeri su 5` + `,i numeri random erano ${numeriRandom} `)
  }
 
  /* Funzione appare Prompt */ 
